@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-env
+data:
+  ENV: Value from Config Map
+

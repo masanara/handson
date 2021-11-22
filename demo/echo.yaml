@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: echo-pod
+spec:
+  containers:
+  - image: busybox
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo $(MESSAGE); sleep 3; done"]
+    name: busybox
+    env:
+    - name: MESSAGE
+      value: "Hello World"
+
