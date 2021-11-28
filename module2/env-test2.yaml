@@ -1,7 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: echo-pod
+  labels:
+    run: env-test2
+  name: env-test2
 spec:
   containers:
   - image: busybox
@@ -10,5 +12,7 @@ spec:
     name: busybox
     env:
     - name: MESSAGE
-      value: "Hello World"
-
+      valueFrom:
+        configMapKeyRef:
+          name: cm-env
+          key: ENV

@@ -3,5 +3,4 @@ kind: ConfigMap
 metadata:
   name: cm-env
 data:
-  ENV: Value from Config Map
-
+  ENV: Value from ConfigMap
