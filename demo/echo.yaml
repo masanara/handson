@@ -4,7 +4,7 @@ metadata:
   name: echo-pod
 spec:
   containers:
-  - image: busybox
+  - image: harbor.nsx.techlab.netone.co.jp/handson/busybox:latest
     command: ["/bin/sh"]
     args: ["-c", "while true; do echo $(MESSAGE); sleep 3; done"]
     name: busybox

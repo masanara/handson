@@ -15,7 +15,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: mysql:5
+      - image: harbor.nsx.techlab.netone.co.jp/handson/mysql:5.7.43
         name: mysql
         env:
         - name: MYSQL_RANDOM_ROOT_PASSWORD
@@ -44,7 +44,7 @@ spec:
       name: mysql-data
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: gp2
+      storageClassName: unity-k8s
       resources:
         requests:
           storage: 2Gi

@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: busybox
-      image: busybox
+      image: harbor.nsx.techlab.netone.co.jp/handson/busybox:latest
       volumeMounts:
       - name: pvc
         mountPath: "/tmp/data"

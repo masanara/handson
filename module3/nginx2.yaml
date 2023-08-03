@@ -15,7 +15,7 @@ spec:
         app: nginx2
     spec:
       containers:
-      - image: netonesystems/nginx:2.0
+      - image: harbor.nsx.techlab.netone.co.jp/handson/nginx:2.0
         name: nginx
 ---
 apiVersion: v1

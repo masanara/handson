@@ -14,7 +14,7 @@ spec:
         app: wordpress
     spec:
       containers:
-      - image: wordpress
+      - image: harbor.nsx.techlab.netone.co.jp/handson/wordpress:6.2.2-php8.0-apache
         name: wordpress
         env:
         - name: WORDPRESS_DB_HOST

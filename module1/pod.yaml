@@ -6,5 +6,5 @@ metadata:
   name: nginx
 spec:
   containers:
-  - image: netonesystems/nginx:1.0
+  - image: harbor.nsx.techlab.netone.co.jp/handson/nginx:1.0
     name: nginx
